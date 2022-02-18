@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money-Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7fde297257.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color: rgb(218, 218, 211);
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h3 class="text-5xl text-center mt-8 mb-3"><span class="font-semibold text-cyan-600">Family Bank</span></h3>
+    </header>
+    <div class="container">
+        <div class="row flex">
+            <div class="col-md-6">
+                <div class="half-width w-3/4 mt-8">
+                    <img src="images/bank1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 mt-8">
+                <div>
+                    <h4 class="text-2xl mb-3 ml-8">Income</h4>
+                    <p>Income:</p>
+                    <input id="income-text" type="text">
+                </div>
+
+                <div>
+                    <h4 class="text-2xl mt-2 mb-3 ml-8">Expenses</h4>
+                    <p>Food:</p>
+                    <input id="food-text" type="text">
+                    <p>Rent:</p>
+                    <input id="rent-text" type="text">
+                    <p>Clothes:</p>
+                    <input id="clothes-text" type="text">
+                </div>
+                <button id="calculate-amount" class="bg-yellow-600 px-4 rounded py-2 mt-2 ml-12 text-white font-medium">Calculate</button>
+                <h4 class="text-2xl mt-2 ">Total Expenses: <span id="total-expenses">00</span></h4>
+                
+                <h4 class="text-2xl ml-10">Balance: <span id="total-balance">00</span></h4>
+                <h5>Save:</h5>
+                <input id="parcent" type="text">%<button id="saving" class="bg-yellow-600 px-4 rounded py-2 ml-2 text-white font-medium">Save</button>
+                <h4 class="text-2xl mb-3 ml-8">Saving Amount:<span id="saving-amount">00</span></h4>
+                <h4 class="text-2xl mb-3 ml-8">Remaining Balance:<span id="remaining-balance">00</span></h4>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
